@@ -13,7 +13,7 @@ Below shows the filepath for my local environment.
 
 The game starts by opening the console and prompting the user with a start screen showing the controls and objective. 
 
-![image](https://github.com/user-attachments/assets/64a3bd41-74fb-405a-be6f-1d0865d75ca7)
+![image](https://github.com/user-attachments/assets/32eecc5b-76e0-4fea-a596-4c5df7c5ded6)
 
 
 After hitting any key to start, the users character (">") is populated and obstacles beginning moving toward the character.  
@@ -25,11 +25,27 @@ The user must use the space bar to "fly" through the gaps. If the character hits
 
 ![image](https://github.com/user-attachments/assets/64a13693-245e-4d3d-bb3b-df1f48a05c3a)
 
-
 Points are calculated based on how long the character lasts without hitting an obstacle.
 
-If you get a LINK error, the .exe is most likely still running.  Go to task manager and search for "Laggy Bird" and end the 
-executable task.
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+Common Errors:
+<br>
+<br>
+
+![image](https://github.com/user-attachments/assets/a4cb026b-10e2-4ddb-8ddc-dbc9d6e332f5)
+
+If you get a LINK error, the .exe is most likely still running.  
+
+
+![image](https://github.com/user-attachments/assets/01b112ea-a81e-4756-a379-23fdc9b6e4bf)
+
+Go to task manager and search for "Laggy Bird" and end the executable task.
 
 Below is a screenshot of how I have my file linked in Visual Studio Community 2022.
 
