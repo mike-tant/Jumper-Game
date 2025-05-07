@@ -31,3 +31,7 @@ Points are calculated based on how long the character lasts without hitting an o
 If you get a LINK error, the .exe is most likely still running.  Go to task manager and search for "Laggy Bird" and end the 
 executable task.
 
+Below is a screenshot of how I have my file linked in Visual Studio Community 2022.
+
+![image](https://github.com/user-attachments/assets/25c79482-6f55-4f1a-a325-c00c7bbf9477)
+
