@@ -30,7 +30,7 @@
 
 
 
-; Updated: 5/7/25
+; Updated: 5/8/25
 ; Mike Tant
 
 
@@ -93,6 +93,7 @@ strHighScore  byte "High Score: ", 0
 ; Game over messages
 playAgainMsg   byte "Game Over! Your score: ",0
 againPrompt    byte "Play again? (Y/N): ",0
+dashedSpacer   byte "-------------------------------------",0
 instructions1  byte "Objective: Avoid the obstacles", 0
 instructions2  byte " Controls: Spacebar to fly", 0
 
@@ -159,7 +160,7 @@ gameLoop:
     call SetTextColor
     cmp useGround1, 1       ; Toggle between 2 ground patterns (oscillation gives illusion of movement)
     je drawG1
-    mov edx, offset ground2
+      mov edx, offset ground2
     jmp drawGround
 
 drawG1:
@@ -337,11 +338,19 @@ ShowStartScreen PROC
     ; Instructions Text
     mov eax, white + (black * 16)
     call SetTextColor
+
+    mov dl, 17
+    mov dh, 11
+    call Gotoxy
+    mov edx, offset dashedSpacer
+    call WriteString
+
     mov dl, 20
     mov dh, 12
     call Gotoxy
     mov edx, offset instructions1
     call WriteString
+
     mov dl, 20
     mov dh, 14
     call Gotoxy
