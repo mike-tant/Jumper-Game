@@ -50,7 +50,7 @@ INCLUDELIB user32.lib
 ; Windows API function to determine whether a key is being pressed
 GetAsyncKeyState PROTO :DWORD
 
-; Built-in sound function in Irvine
+; Built-in sound function in Windows API
 Beep PROTO, freq:DWORD, duration:DWORD
 
 
