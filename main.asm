@@ -20,13 +20,14 @@
 ; WriteChar: Writes character data type to console
 ; ReadChar: Blocking funtion, waits for user input and stalls program until received
 ; RandomRange: Chooses a random value in a defined range
-; Beep: Produces sound with ability to adjust hertz and duration
+
 
 ; *** Important Windows API Funcitons: ***
 
 ; VK_SPACE: Defines key code for space bar
 ; VK_X: Defines key code for 'X' key
 ; GetAsyncKeyState: Non-blocking function that checks for user input
+; Beep: Produces sound with ability to adjust hertz and duration
 
 
 
@@ -111,12 +112,12 @@ minGapY   byte 3        ; Top row for gap start
 maxGapY   byte 28       ; Bottom row for play area
 
 ; Jump mechanics 
-isJumping   byte 0        ; Initializes variables
+isJumping   byte 0      ; Initializes variables
 jumpCounter byte 0
-jumpHeight  byte 4       ; Jump height (higher the number = higher jump)
+jumpHeight  byte 4      ; Jump height (higher the number = higher jump)
 
 ; Animation speeds
-gameSpeed   dword 15      ; Millisecond delay between game loops
+gameSpeed   dword 25    ; Millisecond delay between game loops
 groundSpeed byte 7      ; Animate ground every 7 frames (slower than obstacle speed)
 
 
@@ -160,7 +161,7 @@ gameLoop:
     call SetTextColor
     cmp useGround1, 1       ; Toggle between 2 ground patterns (oscillation gives illusion of movement)
     je drawG1
-      mov edx, offset ground2
+    mov edx, offset ground2
     jmp drawGround
 
 drawG1:
@@ -190,7 +191,7 @@ drawGround:
     call CheckCollision
     call HandleInput
 
-    ; Reset obstacle if journey is complete across the console
+    ; Reset obstacle if journey is complete across the console                           ------------------------------
 
     cmp xObstacle, 0        ; Once obstacle has made it all the way to the left
     jg continueGame         ; Bypasses if obstacle is not there yet
@@ -453,7 +454,7 @@ drawWall:
     call WriteChar
 
 skipDraw:
-    inc dh
+    inc dh               ; Next row moving downward
     jmp drawLoop
 done:
     ret
