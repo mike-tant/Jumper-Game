@@ -105,7 +105,7 @@ yPos byte 10
 ;Obstacle variables
 xObstacle byte 0        ; Initializes x poition of obstacle
 rightEdge byte 73       ; Defines x postion of starting point of obstacle
-gapStartY byte 5        ; Initial gap position
+gapStartY byte ?        ; Initial gap position
 gapWidth  byte 8        ; Controls the size of the gap in the wall
 minGapY   byte 3        ; Top row for gap start
 maxGapY   byte 28       ; Bottom row for play area
