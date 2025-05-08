@@ -383,7 +383,7 @@ DrawPlayer PROC
     mov dl, xPos
     mov dh, yPos
     call Gotoxy
-    mov al, '>'         ; Character ASCII of a bird
+    mov al, 9Dh         ; Character ASCII of a bird ¥ (yen sign)
     call WriteChar
     ret
 DrawPlayer ENDP
