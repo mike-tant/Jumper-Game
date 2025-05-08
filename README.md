@@ -13,12 +13,15 @@ Below shows the filepath for my local environment.
 
 The game starts by opening the console and prompting the user with a start screen showing the controls and objective. 
 
-![image](https://github.com/user-attachments/assets/32eecc5b-76e0-4fea-a596-4c5df7c5ded6)
+
+![image](https://github.com/user-attachments/assets/e4c5ec9c-7f90-4a57-bd8c-32a99a43874c)
 
 
-After hitting any key to start, the users character (">") is populated and obstacles beginning moving toward the character.  
+After hitting any key to start, the users character ("¥") is populated and obstacles beginning moving toward the character.  
 
-![image](https://github.com/user-attachments/assets/9fdd9733-451a-4404-b0c8-769091d96a97)
+
+![image](https://github.com/user-attachments/assets/77aff389-c136-4740-8ed8-7287606ba412)
+
 
 
 The user must use the space bar to "fly" through the gaps. If the character hits an obstacle the game is over.  
